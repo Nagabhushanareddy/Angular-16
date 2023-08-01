@@ -17,6 +17,7 @@
     "rxjs": "^7.8.1",
     "tslib": "^2.6.1",
     "zingchart": "^2.9.12",
+    "zingchart-angular": "0.0.3",
     "zinggrid": "^1.5.3",
     "zone.js": "^0.13.1"
   },

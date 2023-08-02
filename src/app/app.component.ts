@@ -35,35 +35,35 @@ export class AppComponent {
   ];
   websiteTraffic: zingchart.graphset = {
     type: 'line',
-    backgroundColor: '#FFC107',
+    'background-color': '#FFC107',
     tooltip: {
-      fontColor: '#333',
+      'font-color': '#333',
     },
     plot: {
       marker: {
-        backgroundColor: '#FFC107',
-        borderWidth: '2px',
+        'background-color': '#FFC107',
+        'border-width': '2px',
       },
       aspect: 'spline',
     },
     plotarea: {
       margin: '35 40 40 40',
     },
-    scaleX: {
-      lineColor: '#ffd363',
-      tick: {
-        lineColor: 'none',
-      },
-      labels: ['Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat', 'Sun'],
-      item: {
-        fontColor: 'white',
-        rules: [],
-      },
-      guide: {
-        lineColor: 'none',
-      },
+    scale: {
+      //'line-color': '#ffd363',
+      //tick: {
+        //lineColor: 'none',
+      //},
+      //labels: ['Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat', 'Sun'],
+      //item: {
+        //fontColor: 'white',
+        //rules: [],
+      //},
+      //guide: {
+        //lineColor: 'none',
+      //},
     },
-    scaleY: {
+    /*scaleY: {
       offsetX: -15,
       lineColor: 'none',
       tick: {
@@ -75,12 +75,12 @@ export class AppComponent {
       guide: {
         lineColor: '#ffd363',
       },
-    },
+    },*/
     series: [
       {
         values: [500, 300, 400, 500, 600, 200, 300],
-        lineColor: 'white',
-        lineWidth: '2px',
+        'line-color': 'white',
+        'line-width': '2px',
       },
     ],
   };
@@ -88,19 +88,19 @@ export class AppComponent {
   allocatedBudget: zingchart.graphset = {
     type: 'gauge',
     alpha: 1,
-    backgroundColor: '#eeeeee',
+    'background-color': '#eeeeee',
     plot: {
-      backgroundColor: '#be314b',
-      indicator: [10, 2, 0, 0, 0],
+      'background-color': '#be314b',
+      //indicator: [10, 2, 0, 0, 0],
     },
     plotarea: {
       margin: '30 0 0 0',
     },
     scale: {
-      sizeFactor: 1,
-      offsetY: '10px',
+      'size-factor': 1,
+     // offsetY: '10px',
     },
-    scaleR: {
+   /* scaleR: {
       tick: {
         'line-color': 'none',
       },
@@ -127,17 +127,17 @@ export class AppComponent {
         borderRadius: 10,
         size: '10px',
       },
-    },
+    },*/
 
     tooltip: {
-      backgroundColor: 'black',
+      'background-color': 'black',
     },
     series: [
       {
         values: [70],
         animation: {
-          effect: 'ANIMATION_EXPAND_VERTICAL',
-          method: 'ANIMATION_REGULAR_EASE_OUT',
+        //  effect: 'ANIMATION_EXPAND_VERTICAL',
+         // method: 'ANIMATION_REGULAR_EASE_OUT',
           speed: 2500,
         },
       },
@@ -146,49 +146,49 @@ export class AppComponent {
 
   mediaConsumption: zingchart.graphset = {
     type: 'area',
-    stacked: true,
+    //stacked: true,
     legend: {
       align: 'left',
-      marginTop: '30px',
-      backgroundColor: 'none',
-      borderWidth: '0px',
+      'margin-top': '30px',
+      'background-color': 'none',
+      'border-width': '0px',
       item: {
-        fontFamily: 'Roboto',
+        'font-family': 'Roboto',
       },
       layout: 'x4',
       marker: {
         type: 'circle',
-        borderColor: 'transparent',
-        size: '5px',
+        'border-color': 'transparent',
+        //size: '5px',
       },
       shadow: false,
-      toggleAction: 'remove',
-      verticalAlign: 'top',
+      'toggle-action': 'remove',
+      'vertical-align': 'top',
     },
     plot: {
       tooltip: {
-        text: '<div style="text-align: center; line-height: 14px; padding-top: 5px;"><b>%t</b><br><br>%kt<br><br><b>Traffic: %node-value KBps</b></div>',
-        marginTop: '5px',
+      //  text: '<div style="text-align: center; line-height: 14px; padding-top: 5px;"><b>%t</b><br><br>%kt<br><br><b>Traffic: %node-value KBps</b></div>',
+      'margin-top': '5px',
         padding: '5px 15px',
-        fontFamily: 'Roboto',
-        htmlMode: true,
+        'font-family': 'Roboto',
+        //htmlMode: true,
       },
-      activeArea: true,
-      alphaArea: 0.7,
+     // activeArea: true,
+      //alphaArea: 0.7,
       aspect: 'spline',
       marker: {
-        borderColor: '#ffffff',
+        'border-color': '#ffffff',
         shadow: false,
         size: '3px',
       },
       shadow: false,
     },
     plotarea: {
-      marginTop: '70px',
-      marginRight: '65px',
-      marginLeft: '20px',
+      'margin-top': '70px',
+      'margin-right': '65px',
+      'margin-left': '20px',
     },
-    scaleX: {
+    /*scaleX: {
       values: [
         1564646407000, 1564646707000, 1564647007000, 1564647307000,
         1564647607000, 1564647907000, 1564648207000, 1564648507000,
@@ -233,9 +233,9 @@ export class AppComponent {
         visible: false,
       },
       zooming: true,
-    },
+    },*/
 
-    series: [
+   /* series: [
       {
         text: 'Outbound',
         values: [
@@ -245,7 +245,7 @@ export class AppComponent {
         backgroundColor: '#ffc107',
         lineColor: '#ffc107',
         marker: {
-          backgroundColor: '#ffc107',
+          'background-color': '#ffc107',
         },
         palette: 1,
       },
@@ -262,24 +262,24 @@ export class AppComponent {
         },
         palette: 0,
       },
-    ],
+    ],*/
   };
 
   customerInteractions: zingchart.graphset = {
     type: 'radar',
-    backgroundColor: '#2196f3',
+    'background-color': '#2196f3',
     plot: {
       aspect: 'area',
       animation: {
         effect: 3,
-        sequence: 1,
-        speed: 700,
+       // sequence: 1,
+        //speed: 700,
       },
       marker: {
         alpha: 0,
       },
     },
-    scaleV: {
+   /* scaleV: {
       visible: false,
     },
     scaleK: {
@@ -309,51 +309,51 @@ export class AppComponent {
         alpha: 0.4,
         backgroundColor: '#b2ebf2 #cfd8dc',
       },
-    },
+    },*/
     plotarea: {
       margin: '20',
     },
-    series: [
+   /* series: [
       {
         values: [70, 39, 48, 39, 41, 35],
-        lineColor: '#fff',
-        backgroundColor: '#fff',
+        'line-color': '#fff',
+        'background-color': '#fff',
       },
       {
         values: [10, 20, 54, 60, 51, 75],
         lineColor: '#00e5ff',
         backgroundColor: '#00e5ff',
       },
-    ],
+    ],*/
   };
 
   enagementPlatforms: zingchart.graphset = {
     type: 'bar',
     legend: {
       align: 'right',
-      marginTop: '0px',
-      marginLeft: '0px',
-      backgroundColor: 'none',
-      borderWidth: '0px',
+      'margin-top': '0px',
+      'margin-left': '0px',
+      'background-color': 'none',
+      'border-width': '0px',
       item: {
-        fontFamily: 'Roboto',
+        'font-family': 'Roboto',
       },
       layout: 'x4',
       marker: {
         type: 'circle',
-        borderColor: 'transparent',
-        size: '5px',
+        'border-color': 'transparent',
+        //size: '5px',
       },
       shadow: false,
-      toggleAction: 'remove',
-      verticalAlign: 'top',
+      'toggle-action': 'remove',
+      'vertical-align': 'top',
     },
     plotarea: {
-      marginTop: 40,
-      marginBottom: 90,
-      marginLeft: 80,
+      'margin-top': 40,
+      'margin-bottom': 90,
+      'margin-left': 80,
     },
-    scaleY: {
+  /*  scaleY: {
       values: '0:120:10',
       guide: {
         lineStyle: 'dashed',
@@ -368,11 +368,11 @@ export class AppComponent {
         fontWeight: 600,
         paddingRight: 20,
       },
-    },
+    },*/
     tooltip: {
       visible: false,
     },
-    scaleX: {
+    /*scaleX: {
       lineColor: 'none',
       guide: {
         lineColor: '#657685',
@@ -385,27 +385,27 @@ export class AppComponent {
         color: '#b8beca',
         fontWeight: 600,
       },
-    },
+    },*/
 
-    backgroundColor: '#fff',
+    'background-color': '#fff',
     plot: {
       stacked: true,
-      'stack-true': 'normal',
-      barWidth: 10,
+      //'stack-true': 'normal',
+      'bar-width': 10,
     },
-    crosshairX: {
+    'crosshair': {
       marker: {},
-      plotLabel: {},
-      scaleLabel: {},
+      'plot-label': {},
+      'scale-label': {},
     },
-    series: [
+   /* series: [
       {
         values: [
           19, 5, 13, 23, 9, 15, 10, 14, 17, 13, 6, 28, 13, 17, 2, 20, 5, 9, 15,
           4, 10, 10, 17, 28, 16, 8, 5, 3, 9, 22,
         ],
-        backgroundColor: '#9c27b0',
-        text: 'Facebook',
+        'background-color': '#9c27b0',
+       // text: 'Facebook',
       },
       {
         values: [
@@ -431,6 +431,6 @@ export class AppComponent {
         backgroundColor: '#2196f3',
         text: 'TikTok',
       },
-    ],
+    ],*/
   };
 }
